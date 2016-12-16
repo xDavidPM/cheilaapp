@@ -1,28 +1,30 @@
 package com.example.david.money2;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;  
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 /**
  * Created by david on 15/12/16.
  */
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends Activity {
 
-    LinearLayout objetive = null , save = null , spend = null , status = null;
+    private Button objetive, save , spend, status;;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_actitivy);
 
-        objetive = (LinearLayout) findViewById(R.id.lyt_obj);
-        save = (LinearLayout) findViewById(R.id.lyt_save);
-        spend = (LinearLayout) findViewById(R.id.lyt_spend);
-        status = (LinearLayout) findViewById(R.id.lyt_status);
+        objetive = (Button) findViewById(R.id.lyt_obj);
+        save = (Button) findViewById(R.id.lyt_save);
+        spend = (Button) findViewById(R.id.lyt_spend);
+        status = (Button) findViewById(R.id.lyt_status);
 
 
         objetive.setOnClickListener(new View.OnClickListener() {
@@ -66,5 +68,3 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 }
-
-

@@ -1,5 +1,6 @@
 package com.example.david.money2;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +11,7 @@ import android.view.ViewGroup;
  * Created by david on 15/12/16.
  */
 
-public class ObjetiveActivity extends AppCompatActivity {
+public class ObjetiveActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

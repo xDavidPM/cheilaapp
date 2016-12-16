@@ -1,5 +1,6 @@
 package com.example.david.money2;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,7 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.content.Intent;
 
-public class IngressActivity extends AppCompatActivity {
+public class IngressActivity extends Activity {
 
     Button  ingress;
 
@@ -27,9 +28,8 @@ public class IngressActivity extends AppCompatActivity {
 
                 i = new Intent(IngressActivity.this, MenuActivity.class);
                 startActivity(i);
+                finish();
             }
         });
-
-
     }
 }

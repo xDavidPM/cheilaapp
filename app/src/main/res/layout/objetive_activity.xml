@@ -4,68 +4,243 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.16"
-        android:background="#93BC91"
-        android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textSize="44sp"
-            android:fontFamily="casual"
-            android:textStyle="normal|bold"
-            android:text="Meta"/>
-    </LinearLayout>
+            android:layout_height="match_parent" >
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.25"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#93BC91"
+                android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:fontFamily="casual"
-            android:textStyle="normal|bold"
-            android:text="Nombre:"/>
+                <TextView
+                    android:layout_width="424dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="44sp"
+                    android:fontFamily="casual"
+                    android:textStyle="normal|bold"
+                    android:text="Meta"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:fontFamily="casual"
-            android:textStyle="normal|bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.25"
-        android:orientation="horizontal">
+            </LinearLayout>
+        </TableRow>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:fontFamily="casual"
-            android:textStyle="normal|bold"
-            android:textSize="24sp"
-            android:text="Nombre:"/>
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:fontFamily="casual"
-            android:textStyle="normal|bold" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-    </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"/>
+
+                    <TextView
+                        android:text="Nombre"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textStyle="normal|bold"
+                        android:fontFamily="casual"
+                        android:typeface="normal"
+                        android:textAllCaps="false"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_nombre"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text="Fecha objetivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="datetime"
+                        android:ems="10"
+                        android:id="@+id/txt_fecha_obj"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text="Fecha inicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="datetime"
+                        android:ems="10"
+                        android:id="@+id/txt_fecha_inicio"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:text="Precio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/txt_precio"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_valor_fin"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+
+
+    </TableLayout>
 
 </LinearLayout>

@@ -44,8 +44,7 @@
             android:layout_width="0dp "
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:orientation="vertical"
-            android:id="@+id/lyt_obj">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -62,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="0.8"
+                android:id="@+id/lyt_obj"
                 android:background="@drawable/img_objetive"/>
         </LinearLayout>
 
@@ -75,8 +75,7 @@
             android:layout_width="0dp "
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:orientation="vertical"
-            android:id="@+id/lyt_save">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -93,7 +92,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="0.8"
-                android:background="@drawable/img_save"/>
+                android:background="@drawable/img_save"
+                android:id="@+id/lyt_save"/>
         </LinearLayout>
 
         <TextView
@@ -123,8 +123,7 @@
             android:layout_width="0dp "
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:orientation="vertical"
-            android:id="@+id/lyt_spend">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -141,7 +140,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="0.8"
-                android:background="@drawable/img_spend"/>
+                android:background="@drawable/img_spend"
+                android:id="@+id/lyt_spend"/>
         </LinearLayout>
 
 
@@ -154,8 +154,7 @@
             android:layout_width="0dp "
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:orientation="vertical"
-            android:id="@+id/lyt_status">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -172,7 +171,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="0.8"
-                android:background="@drawable/img_status"/>
+                android:background="@drawable/img_status"
+                android:id="@+id/lyt_status"/>
         </LinearLayout>
         <TextView
             android:layout_width="0dp"
