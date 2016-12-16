@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Money2</string>
+    <string name="app_name">MoneyManager</string>
+    <string name="btn_ingress">Comenzar</string>
+    <string name="lb_opciones">OPCIONES</string>
+    <string name="lb_metas">Metas</string>
+    <string name="lb_ahorrar">Ahorrar</string>
+    <string name="lb_gastar">Descontar</string>
+    <string name="lb_estado">Estado</string>
 </resources>

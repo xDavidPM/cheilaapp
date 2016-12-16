@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.david.money2.IngressActivity">
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Bitches!" />
+        android:layout_weight="0.8"
+        android:layout_height="0dp"/>
 
     <Button
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:width="0dp"
         android:id="@+id/btn_ingress"
-        android:text="Ingress"
+        android:textSize="24sp"
+        android:background="?android:attr/colorPressedHighlight"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:elevation="0dp"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/btn_ingress" />
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+        android:layout_weight="0.15"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
