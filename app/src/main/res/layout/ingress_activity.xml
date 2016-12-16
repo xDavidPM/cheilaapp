@@ -13,25 +13,42 @@
         android:layout_weight="0.8"
         android:layout_height="0dp"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:width="0dp"
-        android:id="@+id/btn_ingress"
-        android:textSize="44sp"
-        android:background="?android:attr/colorPressedHighlight"
-        android:textColor="@android:color/background_light"
-        android:textAllCaps="false"
-        android:textAlignment="center"
-        android:elevation="0dp"
-        android:layout_marginBottom="38dp"
-        android:fontFamily="casual"
-        android:textStyle="normal|bold"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:text="@string/btn_ingress" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="#F1EA9D"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:id="@+id/btn_ingress"
+            android:textSize="36sp"
+            android:background="?android:attr/colorPressedHighlight"
+            android:textColor="@android:color/background_light"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:elevation="0dp"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/btn_ingress" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
