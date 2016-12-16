@@ -27,8 +27,6 @@ public class IngressActivity extends AppCompatActivity {
 
                 i = new Intent(IngressActivity.this, MenuActivity.class);
                 startActivity(i);
-                finish();
-
             }
         });
 

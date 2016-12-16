@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:orientation="vertical"
-            android:id="@+id/lyt_goal">
+            android:id="@+id/lyt_obj">
 
             <TextView
                 android:layout_width="wrap_content"

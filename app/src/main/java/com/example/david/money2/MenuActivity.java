@@ -12,14 +12,14 @@ import android.widget.LinearLayout;
 
 public class MenuActivity extends AppCompatActivity {
 
-    LinearLayout objetive , save , spend , status;
+    LinearLayout objetive = null , save = null , spend = null , status = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_actitivy);
 
-        objetive = (LinearLayout) findViewById(R.id.lyt_goal);
+        objetive = (LinearLayout) findViewById(R.id.lyt_obj);
         save = (LinearLayout) findViewById(R.id.lyt_save);
         spend = (LinearLayout) findViewById(R.id.lyt_spend);
         status = (LinearLayout) findViewById(R.id.lyt_status);
@@ -28,44 +28,40 @@ public class MenuActivity extends AppCompatActivity {
         objetive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent i;
+                Intent u;
 
-                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
-                startActivity(i);
-                finish();
+                u = new Intent(MenuActivity.this, ObjetiveActivity.class);
+                startActivity(u);
             }
         });
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent i;
+                Intent a;
 
-                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
-                startActivity(i);
-                finish();
+                a = new Intent(MenuActivity.this, SaveActivity.class);
+                startActivity(a);
             }
         });
 
         spend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent i;
+                Intent e;
 
-                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
-                startActivity(i);
-                finish();
+                e = new Intent(MenuActivity.this, SpendActivity.class);
+                startActivity(e);
             }
         });
 
         status.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                Intent i;
+                Intent o;
 
-                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
-                startActivity(i);
-                finish();
+                o = new Intent(MenuActivity.this, StatusActivity.class);
+                startActivity(o);
             }
         });
     }

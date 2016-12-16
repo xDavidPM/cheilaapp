@@ -21,5 +21,51 @@
             android:text="Meta"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:text="Nombre:"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:text="Nombre:"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
 
 </LinearLayout>
