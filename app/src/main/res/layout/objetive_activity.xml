@@ -25,7 +25,9 @@
                     android:textSize="44sp"
                     android:fontFamily="casual"
                     android:textStyle="normal|bold"
-                    android:text="Meta"/>
+                    android:text="@string/lb_metas"
+                    android:textAlignment="center"
+                    android:layout_gravity="center" />
 
             </LinearLayout>
         </TableRow>
@@ -54,7 +56,7 @@
                         android:layout_weight="0.1"/>
 
                     <TextView
-                        android:text="Nombre"
+                        android:text="@string/lb_nombreMeta"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
@@ -67,7 +69,7 @@
                     <EditText
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
+                        android:layout_weight="0.41"
                         android:inputType="textPersonName"
                         android:ems="10"
                         android:id="@+id/txt_nombre"/>
@@ -101,14 +103,18 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:layout_width="50dp"
+                        android:layout_width="37dp"
                         android:layout_height="20dp"/>
 
                     <TextView
-                        android:text="Fecha objetivo"
+                        android:text="@string/lb_fechaObejetivo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:textStyle="normal|bold"
+                        android:fontFamily="casual"
+                        android:typeface="normal"
+                        android:textSize="18sp" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -147,14 +153,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:layout_width="50dp"
+                        android:layout_width="38dp"
                         android:layout_height="20dp"/>
 
                     <TextView
-                        android:text="Fecha inicio"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text="@string/lb_fechaInicio"
+                        android:fontFamily="casual"
+                        android:typeface="normal"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -191,14 +201,18 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:layout_width="50dp"
+                        android:layout_width="41dp"
                         android:layout_height="20dp"/>
 
                     <TextView
-                        android:text="Precio"
+                        android:text="@string/lb_valorMeta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:fontFamily="casual"
+                        android:typeface="normal"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
 
                     <EditText
                         android:layout_width="match_parent"
@@ -224,7 +238,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="3.21">
             <TextView
                 android:layout_width="20dp"
                 android:layout_height="20dp"/>
@@ -240,7 +255,28 @@
         </LinearLayout>
 
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:id="@+id/btn_ingress"
+            android:textSize="24sp"
+            android:background="?android:attr/colorPressedHighlight"
+            android:textColor="@android:color/background_light"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:elevation="0dp"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/btn_ingress" />
 
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="2.70" />
     </TableLayout>
 
 </LinearLayout>

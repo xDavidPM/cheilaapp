@@ -19,7 +19,7 @@
             android:textSize="44sp"
             android:fontFamily="casual"
             android:textStyle="normal|bold"
-            android:text="OPCIONES"/>
+            android:text="@string/lb_opciones"/>
 
     </LinearLayout>
 

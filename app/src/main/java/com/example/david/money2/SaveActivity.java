@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by david on 15/12/16.
  */
 
-public class SaveActivity extends Activity {
+public class SaveActivity extends Activity implements SaveFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
