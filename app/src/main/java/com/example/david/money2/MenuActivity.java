@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 
 public class MenuActivity extends AppCompatActivity {
 
-    LinearLayout objetive;
+    LinearLayout objetive , save , spend , status;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,17 +20,52 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.menu_actitivy);
 
         objetive = (LinearLayout) findViewById(R.id.lyt_goal);
+        save = (LinearLayout) findViewById(R.id.lyt_save);
+        spend = (LinearLayout) findViewById(R.id.lyt_spend);
+        status = (LinearLayout) findViewById(R.id.lyt_status);
+
 
         objetive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-
                 Intent i;
 
                 i = new Intent(MenuActivity.this, ObjetiveActivity.class);
                 startActivity(i);
                 finish();
+            }
+        });
 
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent i;
+
+                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        spend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent i;
+
+                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        status.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent i;
+
+                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
+                startActivity(i);
+                finish();
             }
         });
     }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/pantalla_principal"
     tools:context="com.example.david.money2.IngressActivity">
 
     <TextView
@@ -18,7 +19,7 @@
         android:layout_weight="0.05"
         android:width="0dp"
         android:id="@+id/btn_ingress"
-        android:textSize="24sp"
+        android:textSize="44sp"
         android:background="?android:attr/colorPressedHighlight"
         android:textColor="@android:color/background_light"
         android:textAllCaps="false"

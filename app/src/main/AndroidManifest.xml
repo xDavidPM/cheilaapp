@@ -28,5 +28,20 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="false"></activity>
+        <activity
+            android:name=".SaveActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="false"></activity>
+        <activity
+            android:name=".SpendActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="false"></activity>
+        <activity
+            android:name=".StatusActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="false"></activity>
     </application>
 </manifest>
