@@ -4,8 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.LinearLayout;
 
 /**
  * Created by david on 15/12/16.
@@ -13,22 +12,22 @@ import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
 
-    Button save;
+    LinearLayout objetive;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_actitivy);
 
-        save = (Button) findViewById(R.id.btn_save);
+        objetive = (LinearLayout) findViewById(R.id.lyt_goal);
 
-        save.setOnClickListener(new View.OnClickListener() {
+        objetive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
 
                 Intent i;
 
-                i = new Intent(MenuActivity.this, SaveActivity.class);
+                i = new Intent(MenuActivity.this, ObjetiveActivity.class);
                 startActivity(i);
                 finish();
 

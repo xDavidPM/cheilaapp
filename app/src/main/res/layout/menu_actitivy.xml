@@ -1,41 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="#ffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:text="@string/lb_opciones"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:id="@+id/textView"
-        android:textSize="34sp"
-        android:fontFamily="casual"
-        android:textAllCaps="false"
-        android:layout_gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="normal|bold" />
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+        <LinearLayout
+            android:layout_width="0dp "
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:id="@+id/lyt_goal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/lb_metas"
+                android:fontFamily="casual"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/img_objetive"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <LinearLayout
+            android:layout_width="0dp "
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:id="@+id/lyt_save">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/lb_ahorrar"
+                android:fontFamily="casual"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/img_wallet"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+    </LinearLayout>
 
     <TextView
-        android:text="@string/lb_metas"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:textStyle="normal|bold"
-        android:textSize="18sp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="76dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="18dp"
-        android:typeface="normal"
-        android:fontFamily="casual" />
-    <Button
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+        <LinearLayout
+            android:layout_width="0dp "
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:id="@+id/lyt_spend">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/lb_gastar"
+                android:fontFamily="casual"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/img_spend"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <LinearLayout
+            android:layout_width="0dp "
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:id="@+id/lyt_status">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="@string/lb_estado"
+                android:fontFamily="casual"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/img_goal"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+
+    </LinearLayout>
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_save"/>
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
 
 </LinearLayout>
