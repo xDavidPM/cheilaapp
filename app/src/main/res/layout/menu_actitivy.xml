@@ -2,12 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@drawable/pantalla_opciones"
     android:layout_height="match_parent">
 
     <TextView
         android:text="@string/lb_opciones"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         android:id="@+id/textView"
@@ -34,5 +33,9 @@
         android:layout_marginTop="18dp"
         android:typeface="normal"
         android:fontFamily="casual" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"/>
 
 </LinearLayout>
