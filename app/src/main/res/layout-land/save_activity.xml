@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
 
     <LinearLayout
@@ -18,15 +20,15 @@
             android:textSize="44sp"
             android:fontFamily="casual"
             android:textStyle="normal|bold"
-            android:text="@string/lb_gastar"/>
+            android:text="@string/lb_ahorrar"/>
     </LinearLayout>
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:name="com.example.david.money2.SpendFragment"
-        android:id="@+id/fragment"
-        tools:layout="@layout/fragment_spend" />
+        <fragment
+            android:layout_width="653dp"
+            android:layout_height="match_parent"
+            android:name="com.example.david.money2.SaveFragment"
+            android:id="@+id/fragment"
+            tools:layout="@layout/fragment_save" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -47,6 +49,7 @@
                 android:text="@string/lbvalor_dineroAhorrado"
                 android:layout_width="167dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/textView7"
                 android:textSize="18sp"
                 android:fontFamily="casual"
                 android:textStyle="normal|bold"
@@ -64,41 +67,13 @@
                 android:layout_gravity="center"
                 android:gravity="center" />
         </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:text="@string/lbvalor_dineroGastado"
-                android:layout_width="167dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView7"
-                android:textSize="18sp"
-                android:fontFamily="casual"
-                android:textStyle="normal|bold"
-                android:typeface="normal"
-                android:layout_gravity="center"
-                android:gravity="center" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/txt_valorGastado"
-                android:textSize="24sp"
-                android:textStyle="normal|bold"
-                android:layout_gravity="center"
-                android:gravity="center" />
-        </LinearLayout>
     </LinearLayout>
 
     <TextView
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_mensaje"
+        android:id="@+id/textView2"
         android:layout_weight="0.37" />
 
     <TextView
@@ -112,3 +87,4 @@
         android:textSize="24sp" />
 
 </LinearLayout>
+

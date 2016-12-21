@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.david.money2.SaveFragment">
+    tools:context="com.example.david.money2.SpendFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -12,7 +12,7 @@
         android:weightSum="1">
 
         <TextView
-            android:text="@string/lb_montoAhorrar"
+            android:text="@string/lb_montoDescontar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
@@ -24,7 +24,7 @@
             android:layout_width="214dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/edt_ahorro"
+            android:id="@+id/edt_gasto"
             android:layout_weight="0.06"
             android:inputType="numberDecimal" />
 
@@ -32,19 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/img_happy_pig"
-                android:textAlignment="center"
-                android:layout_gravity="center"
-                android:id="@+id/lyt_guardar"
-                android:layout_marginStart="54dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true" />
-
             <TextView
-                android:text="@string/globoTexto_Ahorrar"
+                android:text="@string/globoTexto_Descontar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
@@ -52,7 +41,18 @@
                 android:textAlignment="center"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="220dp" />
+                android:layout_marginLeft="260dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chancho_triste"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:id="@+id/lyt_descontar"
+                android:layout_marginEnd="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 

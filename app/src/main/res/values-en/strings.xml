@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoneyManager</string>
+    <string name="btn_guardar">SAVE</string>
+    <string name="btn_ingress">START</string>
+    <string name="globoTexto_Ahorrar">Push me to save</string>
+    <string name="globoTexto_Descontar">Push me to descount</string>
+    <string name="hello_blank_fragment"></string>
+    <string name="lb_ahorrar">Save</string>
+    <string name="lb_estado">State</string>
+    <string name="lb_fechaInicio">Start Date</string>
+    <string name="lb_fechaObejetivo">Goal Date</string>
+    <string name="lb_gastar">Descount</string>
+    <string name="lb_metas">Goals</string>
+    <string name="lb_nombreMeta">Name</string>
+    <string name="lb_opciones">OPTIONS</string>
+    <string name="lb_valorMeta">Cost</string>
+    <string name="lbvalor_dineroAhorrado">Saved money:</string>
+    <string name="lbvalor_dineroGastado">Spent money:</string>
+    <string name="lb_montoAhorrar">Money to save</string>
+    <string name="lb_montoDescontar">Money to spend</string>
+</resources>

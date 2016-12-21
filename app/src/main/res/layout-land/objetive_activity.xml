@@ -19,7 +19,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="424dp"
+                    android:layout_width="686dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="44sp"
@@ -53,13 +53,13 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.1"/>
+                        android:layout_weight="0.05"/>
 
                     <TextView
                         android:text="@string/lb_nombreMeta"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
+                        android:layout_weight="0.42"
                         android:textStyle="normal|bold"
                         android:fontFamily="casual"
                         android:typeface="normal"
@@ -69,7 +69,7 @@
                     <EditText
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.41"
+                        android:layout_weight="0.42"
                         android:inputType="textPersonName"
                         android:ems="10"
                         android:id="@+id/txt_nombre"/>
@@ -77,16 +77,13 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.1"/>
+                        android:layout_weight="0.07"/>
 
                 </LinearLayout>
 
             </LinearLayout>
 
         </TableRow>
-        <TextView
-            android:layout_width="20dp"
-            android:layout_height="20dp"/>
 
         <TableRow
             android:layout_width="match_parent"
@@ -134,10 +131,6 @@
 
         </TableRow>
 
-        <TextView
-            android:layout_width="20dp"
-            android:layout_height="20dp"/>
-
 
         <TableRow
             android:layout_width="match_parent"
@@ -181,10 +174,6 @@
             </LinearLayout>
 
         </TableRow>
-
-        <TextView
-            android:layout_width="20dp"
-            android:layout_height="20dp"/>
 
         <TableRow
             android:layout_width="match_parent"

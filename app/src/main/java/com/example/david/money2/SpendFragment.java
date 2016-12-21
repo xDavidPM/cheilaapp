@@ -10,16 +10,16 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-public class SaveFragment extends Fragment {
 
+public class SpendFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    EditText editText_valor_ahorrar;
+    EditText editText_valor_gastar;
     float valor_ahorrado;
 
 
-    public SaveFragment() {
+    public SpendFragment() {
         // Required empty public constructor
     }
 
@@ -29,14 +29,14 @@ public class SaveFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_save, container, false);
-        Button boton_guardar = (Button)v.findViewById(R.id.lyt_guardar);
-        editText_valor_ahorrar = (EditText) v.findViewById(R.id.edt_ahorro);
+        View v = inflater.inflate(R.layout.fragment_spend, container, false);
+        Button boton_guardar = (Button)v.findViewById(R.id.lyt_descontar);
+        editText_valor_gastar = (EditText) v.findViewById(R.id.edt_gasto);
         boton_guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                valor_ahorrado=Float.parseFloat(editText_valor_ahorrar.getText().toString());;
-                mListener.onFragmentInteraction1(valor_ahorrado);
+                valor_ahorrado=Float.parseFloat(editText_valor_gastar.getText().toString());;
+                mListener.onFragmentInteraction2(valor_ahorrado);
                 //mListener.putTextFragmento2(texto1);
             }
         });
@@ -52,7 +52,7 @@ public class SaveFragment extends Fragment {
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(float valor) {
         if (mListener != null) {
-            mListener.onFragmentInteraction1(valor);
+            mListener.onFragmentInteraction2(valor);
             // mListener.putTextFragmento2(text);
         }
     }
@@ -88,9 +88,10 @@ public class SaveFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
+
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction1(float valor);
-        //void putTextFragmento2(String texto2);
+        void onFragmentInteraction2(float valor);
+
     }
 }

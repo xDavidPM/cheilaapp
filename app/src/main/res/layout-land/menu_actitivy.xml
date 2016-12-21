@@ -32,7 +32,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.25"
+        android:layout_weight="0.32"
         android:orientation="horizontal">
 
         <TextView
@@ -58,11 +58,12 @@
                 android:textStyle="normal|bold"/>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
+                android:layout_width="102dp"
+                android:layout_height="73dp"
                 android:id="@+id/lyt_obj"
-                android:background="@drawable/img_objetive"/>
+                android:background="@drawable/img_objetive"
+                android:gravity="center"
+                android:layout_gravity="center" />
         </LinearLayout>
 
 
@@ -89,11 +90,11 @@
                 android:textStyle="normal|bold"/>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
+                android:layout_width="109dp"
+                android:layout_height="68dp"
                 android:background="@drawable/img_save"
-                android:id="@+id/lyt_save"/>
+                android:id="@+id/lyt_save"
+                android:layout_gravity="center" />
         </LinearLayout>
 
         <TextView
@@ -103,15 +104,10 @@
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"/>
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.25"
+        android:layout_weight="0.36"
         android:orientation="horizontal">
 
         <TextView
@@ -127,8 +123,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.2"
+                android:layout_height="28dp"
                 android:text="@string/lb_gastar"
                 android:fontFamily="casual"
                 android:layout_gravity="center"
@@ -137,11 +132,13 @@
                 android:textStyle="normal|bold"/>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
                 android:background="@drawable/img_spend"
-                android:id="@+id/lyt_spend"/>
+                android:id="@+id/lyt_spend"
+                android:layout_weight="0.21"
+                android:layout_gravity="center"
+                android:gravity="center" />
         </LinearLayout>
 
 
@@ -168,11 +165,11 @@
                 android:textStyle="normal|bold"/>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
+                android:layout_width="126dp"
+                android:layout_height="72dp"
                 android:background="@drawable/img_status"
-                android:id="@+id/lyt_status"/>
+                android:id="@+id/lyt_status"
+                android:layout_gravity="center" />
         </LinearLayout>
         <TextView
             android:layout_width="0dp"

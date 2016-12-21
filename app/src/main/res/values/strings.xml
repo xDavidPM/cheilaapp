@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MoneyManager</string>
     <string name="btn_ingress">COMENZAR</string>
+    <string name="btn_guardar">GUARDAR</string>
     <string name="lb_opciones">OPCIONES</string>
     <string name="lb_metas">Metas</string>
     <string name="lb_ahorrar">Ahorrar</string>
@@ -10,10 +11,12 @@
     <string name="lb_fechaObejetivo">Fecha Objetivo</string>
     <string name="lb_fechaInicio">Fecha Inicio</string>
     <string name="lb_valorMeta">Precio</string>
-    <string name="lb_montoAhorrar">\n Monto a guardar:</string>
-    <string name="lb_montoDescontar">\n Monto a descontar:</string>
+    <string name="lb_montoAhorrar">\n       Monto a guardar:</string>
+    <string name="lb_montoDescontar">\n     Monto a descontar:</string>
+    <string name="lbvalor_dineroAhorrado">    Dinero ahorrado: </string>
+    <string name="lbvalor_dineroGastado">    Dinero gastado: </string>
     <string name="globoTexto_Ahorrar">Presioname para \n Guardar</string>
     <string name="globoTexto_Descontar">Presioname para \n Descontar</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>
